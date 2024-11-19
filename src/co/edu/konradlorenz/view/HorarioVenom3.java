@@ -15,6 +15,7 @@ import java.awt.Font;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -105,8 +106,12 @@ public class HorarioVenom3 extends JPanel {
 
 		// Otros componentes de la clase HorariosVenom3
 		JLabel lblVenomPoster = new JLabel("");
-		lblVenomPoster.setIcon(
-				new ImageIcon(HorarioVenom3.class.getResource("/co/edu/konradlorenz/view/pictures/posterVenom3.jpg")));
+		URL url = vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/posterVenom3.jpg");
+		if (url == null) {
+		    System.out.println("Recurso no encontrado: /co/edu/konradlorenz/view/pictures/posterVenom3.jpg");
+		} else {
+		    lblVenomPoster.setIcon(new ImageIcon(url));
+		}
 		lblVenomPoster.setBounds(100, 114, 200, 300);
 		add(lblVenomPoster);
 

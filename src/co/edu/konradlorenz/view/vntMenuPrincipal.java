@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.net.URL;
 import java.awt.event.ActionEvent;
 import javax.swing.SwingConstants;
 import javax.swing.UIManager;
@@ -90,7 +91,12 @@ public class vntMenuPrincipal extends JFrame {
 		JLabel lblVenomPoster = new JLabel("");
 		lblVenomPoster.setBounds(44, 238, 200, 300);
 		bodyPeliculas.add(lblVenomPoster);
-		lblVenomPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/posterVenom3.jpg")));
+		URL url = vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/posterVenom3.jpg");
+		if (url == null) {
+		    System.out.println("Recurso no encontrado: /co/edu/konradlorenz/view/pictures/posterVenom3.jpg");
+		} else {
+		    lblVenomPoster.setIcon(new ImageIcon(url));
+		}
 		
 		JLabel lblEnCartelera = new JLabel("En Cartelera\r\n");
 		lblEnCartelera.setForeground(new Color(185, 18, 0));
@@ -99,24 +105,51 @@ public class vntMenuPrincipal extends JFrame {
 		lblEnCartelera.setBounds(44, 159, 282, 68);
 		bodyPeliculas.add(lblEnCartelera);
 		
-		JLabel lblRobotPoster = new JLabel("\r\n");
-		lblRobotPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/posterRobotSalvaje.jpg")));
-		lblRobotPoster.setBounds(285, 238, 220, 300);
+		JLabel lblRobotPoster = new JLabel();
+		lblRobotPoster.setBounds(285, 238, 220, 300); // Establecer posición y tamaño
+
+		// Cargar la imagen desde el paquete
+		URL url1 = vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/posterRobotSalvaje.jpg");
+		if (url1 == null) {
+		    System.out.println("Recurso no encontrado: /co/edu/konradlorenz/view/pictures/posterRobotSalvaje.jpg");
+		} else {
+		    lblRobotPoster.setIcon(new ImageIcon(url1)); // Asignar la imagen al JLabel si se encuentra
+		}
+
+		// Agregar el JLabel al contenedor principal
 		bodyPeliculas.add(lblRobotPoster);
 		
 		JLabel lblElTIempoQuePoster = new JLabel("\r\n");
-		lblElTIempoQuePoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/elTiempoQueTenemosPoster.jpg")));
+		
 		lblElTIempoQuePoster.setBounds(539, 238, 220, 300);
+		URL url2 = vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/elTiempoQueTenemosPoster.jpg");
+		if (url2 == null) {
+		    System.out.println("Recurso no encontrado: /co/edu/konradlorenz/view/pictures/elTiempoQueTenemosPoster.jpg");
+		} else {
+			lblElTIempoQuePoster.setIcon(new ImageIcon(url2)); // Asignar la imagen al JLabel si se encuentra
+		}
 		bodyPeliculas.add(lblElTIempoQuePoster);
 		
 		JLabel lblLaSustanciaPoster = new JLabel("");
-		lblLaSustanciaPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/posterLaSustancia.png")));
+		
 		lblLaSustanciaPoster.setBounds(785, 238, 200, 300);
+		URL url3 = vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/posterLaSustancia.png");
+		if (url3 == null) {
+		    System.out.println("Recurso no encontrado: /co/edu/konradlorenz/view/pictures/posterLaSustancia.png");
+		} else {
+			lblLaSustanciaPoster.setIcon(new ImageIcon(url3)); // Asignar la imagen al JLabel si se encuentra
+		}
 		bodyPeliculas.add(lblLaSustanciaPoster);
 		
 		JLabel lblCodigoTrajePoster = new JLabel("");
-		lblCodigoTrajePoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/posterCodigoTrajeRojo.png")));
+		
 		lblCodigoTrajePoster.setBounds(1015, 238, 200, 300);
+		URL url4 = vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/posterCodigoTrajeRojo.png");
+		if (url4 == null) {
+		    System.out.println("Recurso no encontrado: /co/edu/konradlorenz/view/pictures/posterCodigoTrajeRojo.png");
+		} else {
+			lblCodigoTrajePoster.setIcon(new ImageIcon(url4)); // Asignar la imagen al JLabel si se encuentra
+		}
 		bodyPeliculas.add(lblCodigoTrajePoster);
 		
 		JLabel lblTextoVenom = new JLabel("Venom 3 El ultimo Baile");
