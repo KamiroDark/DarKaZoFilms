@@ -14,31 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/co/edu/konradlorenz/view/elTiempoQueTenemosPoster.jpg</name>
-			<type>1</type>
-			<location>C:/Users/Usuario/Documents/DarKaZoFilms/src/co/edu/konradlorenz/view/pictures/elTiempoQueTenemosPoster.jpg</location>
-		</link>
-		<link>
-			<name>src/co/edu/konradlorenz/view/posterCodigoTrajeRojo.png</name>
-			<type>1</type>
-			<location>C:/Users/Usuario/Documents/DarKaZoFilms/src/co/edu/konradlorenz/view/pictures/posterCodigoTrajeRojo.png</location>
-		</link>
-		<link>
-			<name>src/co/edu/konradlorenz/view/posterLaSustancia.png</name>
-			<type>1</type>
-			<location>C:/Users/Usuario/Documents/DarKaZoFilms/src/co/edu/konradlorenz/view/pictures/posterLaSustancia.png</location>
-		</link>
-		<link>
-			<name>src/co/edu/konradlorenz/view/posterRobotSalvaje.jpg</name>
-			<type>1</type>
-			<location>C:/Users/Usuario/Documents/DarKaZoFilms/src/co/edu/konradlorenz/view/pictures/posterRobotSalvaje.jpg</location>
-		</link>
-		<link>
-			<name>src/co/edu/konradlorenz/view/posterVenom3.jpg</name>
-			<type>1</type>
-			<location>C:/Users/Usuario/Documents/DarKaZoFilms/src/co/edu/konradlorenz/view/pictures/posterVenom3.jpg</location>
-		</link>
-	</linkedResources>
 </projectDescription>
