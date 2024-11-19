@@ -90,7 +90,7 @@ public class vntMenuPrincipal extends JFrame {
 		JLabel lblVenomPoster = new JLabel("");
 		lblVenomPoster.setBounds(44, 238, 200, 300);
 		bodyPeliculas.add(lblVenomPoster);
-		lblVenomPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/posterVenom3.jpg")));
+		lblVenomPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/posterVenom3.jpg")));
 		
 		JLabel lblEnCartelera = new JLabel("En Cartelera\r\n");
 		lblEnCartelera.setForeground(new Color(185, 18, 0));
@@ -100,22 +100,22 @@ public class vntMenuPrincipal extends JFrame {
 		bodyPeliculas.add(lblEnCartelera);
 		
 		JLabel lblRobotPoster = new JLabel("\r\n");
-		lblRobotPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/posterRobotSalvaje.jpg")));
+		lblRobotPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/posterRobotSalvaje.jpg")));
 		lblRobotPoster.setBounds(285, 238, 220, 300);
 		bodyPeliculas.add(lblRobotPoster);
 		
 		JLabel lblElTIempoQuePoster = new JLabel("\r\n");
-		lblElTIempoQuePoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/elTiempoQueTenemosPoster.jpg")));
+		lblElTIempoQuePoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/elTiempoQueTenemosPoster.jpg")));
 		lblElTIempoQuePoster.setBounds(539, 238, 220, 300);
 		bodyPeliculas.add(lblElTIempoQuePoster);
 		
 		JLabel lblLaSustanciaPoster = new JLabel("");
-		lblLaSustanciaPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/posterLaSustancia.png")));
+		lblLaSustanciaPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/posterLaSustancia.png")));
 		lblLaSustanciaPoster.setBounds(785, 238, 200, 300);
 		bodyPeliculas.add(lblLaSustanciaPoster);
 		
 		JLabel lblCodigoTrajePoster = new JLabel("");
-		lblCodigoTrajePoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/pictures/posterCodigoTrajeRojo.png")));
+		lblCodigoTrajePoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/posterCodigoTrajeRojo.png")));
 		lblCodigoTrajePoster.setBounds(1015, 238, 200, 300);
 		bodyPeliculas.add(lblCodigoTrajePoster);
 		
