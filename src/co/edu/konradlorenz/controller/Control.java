@@ -18,10 +18,10 @@ public class Control {
 		datosDePrueba();
 		
 		//Frames
-		//vntMenuPrincipal ventanaPrincipal = new vntMenuPrincipal();
+		vntMenuPrincipal ventanaPrincipal = new vntMenuPrincipal();
 		//vtnRegistrar registrar = new vtnRegistrar();
 		
-		vtnInicioSesion inicioSesion = new vtnInicioSesion();
+		//vtnInicioSesion inicioSesion = new vtnInicioSesion();
 		
 		ventanaPrincipal.setVisible(true);
 		
