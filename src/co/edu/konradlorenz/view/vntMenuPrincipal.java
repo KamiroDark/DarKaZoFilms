@@ -59,8 +59,8 @@ public class vntMenuPrincipal extends JFrame {
 		btnRegistro.setFont(new Font("Arial", Font.BOLD, 17));
 		btnRegistro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				vtnInicioSesion IniciarSesion = new vtnInicioSesion();
-				IniciarSesion.setVisible(true);
+				vtnRegistrar Registrarse = new vtnRegistrar();
+				Registrarse.setVisible(true);
 				vntMenuPrincipal.this.setVisible(false);
 			}
 		});
