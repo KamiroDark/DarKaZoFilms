@@ -94,6 +94,27 @@ public class vtnRegistrar extends JFrame {
 		JButton btnRegistrate = new JButton("Registrarme");
 		btnRegistrate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				try {
+                    // Validar campos
+                    if (txtNombreUsuario.getText().isEmpty()) {
+                        throw new IllegalArgumentException("El nombre de usuario no puede estar vacío.");
+                    }
+                    if (txtCorreoElectronico.getText().isEmpty()) {
+                        throw new IllegalArgumentException("El correo electrónico no puede estar vacío.");
+                    }
+                    if (txtCelular.getText().isEmpty()) {
+                        throw new IllegalArgumentException("El número de celular no puede estar vacío.");
+                    }
+                    if (pswContrasena.getPassword().length == 0) {
+                        throw new IllegalArgumentException("La contraseña no puede estar vacía.");
+                    }
+
+                    // Simular registro exitoso
+                    System.out.println("Usuario registrado exitosamente: " + txtNombreUsuario.getText());
+
+                } catch (IllegalArgumentException ex) {
+                    System.err.println("Error de validación: " + ex.getMessage());
+                }
 			}
 		});
 		btnRegistrate.setForeground(Color.BLACK);

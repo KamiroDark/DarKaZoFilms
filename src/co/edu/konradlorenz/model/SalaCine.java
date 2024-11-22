@@ -87,15 +87,23 @@ public class SalaCine {
 	
 	//Metodo para mostrar Asientos
 	public void mostrarAsientos() {
-        System.out.println("Disposición de asientos en " + nombreSala + " (O = ocupado, D = disponible):");
-        for (int i = 0; i < sala.length; i++) {
-            for (int j = 0; j < sala[i].length; j++) {
-                Asiento asiento = sala[i][j];
-                String estado = asiento.isReservado() ? "O" : "D";
-                String tipo = asiento.getTipo().equals("Premier") ? "P" : "G";
-                System.out.print(estado + tipo + " ");
-            }
-            System.out.println();
-        }
-    }//Cierre mostrarAsientos
+	    try {
+	        if (sala == null) {
+	            throw new Exception("La sala no ha sido inicializada.");
+	        }
+
+	        System.out.println("Disposición de asientos en " + nombreSala + " (O = ocupado, D = disponible):");
+	        for (int i = 0; i < sala.length; i++) {
+	            for (int j = 0; j < sala[i].length; j++) {
+	                Asiento asiento = sala[i][j];
+	                String estado = asiento.isReservado() ? "O" : "D";
+	                String tipo = asiento.getTipo().equals("Premier") ? "P" : "G";
+	                System.out.print(estado + tipo + " ");
+	            }
+	            System.out.println();
+	        }
+	    } catch (Exception e) {
+	        System.out.println("Error al mostrar los asientos: " + e.getMessage());
+	    }
+	}//Cierre mostrarAsientos
 }//Cierre SalaCine

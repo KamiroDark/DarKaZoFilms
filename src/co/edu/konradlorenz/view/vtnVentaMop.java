@@ -89,9 +89,13 @@ public class vtnVentaMop extends JFrame {
 		JButton btnIngresarInicioSesion = new JButton("Continuar\r\n");
 		btnIngresarInicioSesion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				vtnFactura Factura = new vtnFactura();
-				Factura.setVisible(true);
-				vtnVentaMop.this.setVisible(false);
+				 try {
+					 vtnFactura Factura = new vtnFactura();
+						Factura.setVisible(true);
+						vtnVentaMop.this.setVisible(false);
+	                } catch (Exception ex) {
+	                    System.err.println("Error al abrir la ventana de Factura: " + ex.getMessage());
+	                }
 			}
 		});
 		btnIngresarInicioSesion.setForeground(Color.BLACK);
@@ -149,9 +153,13 @@ public class vtnVentaMop extends JFrame {
 		JButton btnNoDeseoContinuar = new JButton("No deseo Continuar");
 		btnNoDeseoContinuar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				vtnAsientos Asientos = new vtnAsientos();
-				Asientos.setVisible(true);
-				vtnVentaMop.this.setVisible(false);
+				try {
+                    vtnAsientos Asientos = new vtnAsientos();
+                    Asientos.setVisible(true);
+                    vtnVentaMop.this.setVisible(false);
+                } catch (Exception ex) {
+                    System.err.println("Error al volver a la ventana de Asientos: " + ex.getMessage());
+                }
 			}
 		});
 		btnNoDeseoContinuar.setForeground(Color.BLACK);

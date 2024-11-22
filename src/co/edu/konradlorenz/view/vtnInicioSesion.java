@@ -84,10 +84,25 @@ public class vtnInicioSesion extends JFrame {
 		panel.setLayout(null);
 		
 		btnIngresarInicioSesion = new JButton("Ingresar");
-		btnIngresarInicioSesion.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
+		btnIngresarInicioSesion.addActionListener(e -> {
+             try {
+                 String correo = txtCorreoElectrnico.getText();
+                 char[] contrasena = pswContrasena.getPassword();
+
+                 // Lógica de validación o autenticación
+                 if (correo.isEmpty() || contrasena.length == 0) {
+                     throw new IllegalArgumentException("Los campos de correo y contraseña no pueden estar vacíos.");
+                 }
+
+                 // Simula acceso exitoso
+                 System.out.println("Inicio de sesión exitoso para el correo: " + correo);
+             } catch (IllegalArgumentException ex) {
+                 System.err.println("Error de validación: " + ex.getMessage());
+             } catch (Exception ex) {
+                 System.err.println("Error inesperado: " + ex.getMessage());
+                 ex.printStackTrace();
+             }
+         });
 		btnIngresarInicioSesion.setBounds(281, 359, 152, 44);
 		panel.add(btnIngresarInicioSesion);
 		btnIngresarInicioSesion.setForeground(Color.BLACK);
