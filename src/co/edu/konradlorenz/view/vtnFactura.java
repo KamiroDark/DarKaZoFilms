@@ -61,24 +61,6 @@ public class vtnFactura extends JFrame {
 		lblTitulo.setBounds(10, 11, 176, 64);
 		jpnMenu.add(lblTitulo);
 		
-		JLabel lblNewLabel = new JLabel("Home");
-		lblNewLabel.setForeground(Color.WHITE);
-		lblNewLabel.setFont(new Font("Arial", Font.BOLD, 18));
-		lblNewLabel.setBounds(280, 35, 61, 22);
-		jpnMenu.add(lblNewLabel);
-		
-		JLabel lblCartelera = new JLabel("Cartelera");
-		lblCartelera.setForeground(Color.WHITE);
-		lblCartelera.setFont(new Font("Arial", Font.BOLD, 18));
-		lblCartelera.setBounds(460, 35, 85, 22);
-		jpnMenu.add(lblCartelera);
-		
-		JLabel lblTeatro = new JLabel("Teatro");
-		lblTeatro.setForeground(Color.WHITE);
-		lblTeatro.setFont(new Font("Arial", Font.BOLD, 18));
-		lblTeatro.setBounds(659, 35, 61, 22);
-		jpnMenu.add(lblTeatro);
-		
 		JPanel jpnFactura = new JPanel();
 		jpnFactura.setLayout(null);
 		jpnFactura.setBorder(new LineBorder(new Color(255, 0, 0), 2));

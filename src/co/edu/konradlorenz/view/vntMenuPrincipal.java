@@ -176,12 +176,28 @@ public class vntMenuPrincipal extends JFrame {
 		btnHorariosRobot.setBackground(new Color(255, 0, 0));
 		btnHorariosRobot.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				HorarioRobotSalvaje hRobotSalvaje = new HorarioRobotSalvaje();
+
+		        contentPane.removeAll(); // Elimina todos los componentes actuales
+		        contentPane.add(hRobotSalvaje, BorderLayout.CENTER); // Agrega el nuevo panel
+		        contentPane.revalidate(); // Valida el nuevo layout
+		        contentPane.repaint(); // Redibuja el JFrame
 			}
 		});
 		btnHorariosRobot.setBounds(327, 592, 123, 32);
 		bodyPeliculas.add(btnHorariosRobot);
 		
 		JButton btnHorarioElTiempo = new JButton("VER HORARIOS");
+		btnHorarioElTiempo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				HorarioElTiempoQueTenemos hElTiempoQueTenemos = new HorarioElTiempoQueTenemos();
+
+		        contentPane.removeAll(); // Elimina todos los componentes actuales
+		        contentPane.add(hElTiempoQueTenemos, BorderLayout.CENTER); // Agrega el nuevo panel
+		        contentPane.revalidate(); // Valida el nuevo layout
+		        contentPane.repaint(); // Redibuja el JFrame
+			}
+		});
 		btnHorarioElTiempo.setFont(new Font("Gill Sans MT", Font.BOLD, 11));
 		btnHorarioElTiempo.setBackground(new Color(255, 0, 0));
 		btnHorarioElTiempo.setBounds(575, 592, 123, 32);
@@ -192,12 +208,28 @@ public class vntMenuPrincipal extends JFrame {
 		btnHorariosLaSustancia.setBackground(new Color(255, 0, 0));
 		btnHorariosLaSustancia.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				HorarioLaSustancia hLaSustancia = new HorarioLaSustancia();
+
+		        contentPane.removeAll(); // Elimina todos los componentes actuales
+		        contentPane.add(hLaSustancia, BorderLayout.CENTER); // Agrega el nuevo panel
+		        contentPane.revalidate(); // Valida el nuevo layout
+		        contentPane.repaint(); // Redibuja el JFrame
 			}
 		});
 		btnHorariosLaSustancia.setBounds(827, 592, 123, 32);
 		bodyPeliculas.add(btnHorariosLaSustancia);
 		
 		JButton btnHorariosTrajeRojo = new JButton("VER HORARIOS");
+		btnHorariosTrajeRojo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				HorarioCodigoTrajeRojo hCodigoTrajeRojo = new HorarioCodigoTrajeRojo();
+
+		        contentPane.removeAll(); // Elimina todos los componentes actuales
+		        contentPane.add(hCodigoTrajeRojo, BorderLayout.CENTER); // Agrega el nuevo panel
+		        contentPane.revalidate(); // Valida el nuevo layout
+		        contentPane.repaint(); // Redibuja el JFrame
+			}
+		});
 		btnHorariosTrajeRojo.setFont(new Font("Gill Sans MT", Font.BOLD, 11));
 		btnHorariosTrajeRojo.setBackground(new Color(255, 0, 0));
 		btnHorariosTrajeRojo.setBounds(1056, 592, 123, 32);
